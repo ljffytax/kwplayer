@@ -291,7 +291,9 @@ def get_artist_pic_url(pic_path):
         return None
     if pic_path[:2] in ('55', '90',):
         pic_path = '/100' + pic_path[2:]
-    url = '{0}star/starheads{1}'.format(ARTIST_IMG_CDN, pic_path)
+        print ("====DEBUG2====")
+        print (pic_path)
+    url = '{0}star/starheads/{1}'.format(ARTIST_IMG_CDN, pic_path)
     return url
 
 def update_artist_logos(liststore, col, tree_iters, urls):
