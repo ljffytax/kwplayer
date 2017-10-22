@@ -291,8 +291,6 @@ def get_artist_pic_url(pic_path):
         return None
     if pic_path[:2] in ('55', '90',):
         pic_path = '/100' + pic_path[2:]
-        print ("====DEBUG2====")
-        print (pic_path)
     url = '{0}star/starheads/{1}'.format(ARTIST_IMG_CDN, pic_path)
     return url
 
