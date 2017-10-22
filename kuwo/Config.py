@@ -149,10 +149,15 @@ def check_first():
         os.makedirs(CONF_DIR)
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR)
+    if not os.path.exists(IMG_DIR):
         os.mkdir(IMG_DIR)
+    if not os.path.exists(IMG_LARGE_DIR):
         os.mkdir(IMG_LARGE_DIR)
+    if not os.path.exists(_default_conf['song-dir']):
         os.mkdir(_default_conf['song-dir'])
+    if not os.path.exists(_default_conf['mv-dir']):
         os.mkdir(_default_conf['mv-dir'])
+    if not os.path.exists(LRC_DIR):
         os.mkdir(LRC_DIR)
 
 def load_conf():
